@@ -1,5 +1,7 @@
 # ping-agent-mail
 
+[简体中文](README.zh-CN.md)
+
 A small local Rust service that lets long-running agents send progress reports through the [Cloudflare Email Sending HTTPS API](https://developers.cloudflare.com/email-service/api/send-emails/rest-api/).
 
 The service owns the Cloudflare account ID, API token, sender, and recipient. Local agents only submit a task ID, status, and report text to its local HTTP API; they cannot choose mail routing or read the credential.
