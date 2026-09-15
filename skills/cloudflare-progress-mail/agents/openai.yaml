@@ -1,0 +1,4 @@
+interface:
+  display_name: "Cloudflare Progress Mail"
+  short_description: "Email checkpoints for long-running local tasks"
+  default_prompt: "Use $cloudflare-progress-mail to report meaningful checkpoints for this long-running task."

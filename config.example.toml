@@ -1,0 +1,13 @@
+# Copy to ~/.config/ping-agent-mail/config.toml and chmod 600.
+account_id = "your-cloudflare-account-id"
+api_token = "your-cloudflare-api-token"
+from = "agent@example.com"
+to = "you@example.net"
+
+# The local agent API listens here. Use 0.0.0.0 only behind access controls.
+listen = "127.0.0.1:9109"
+
+# Optional service policy. Progress updates inside this interval are suppressed;
+# started, completed, and failed notifications are always sent.
+min_progress_interval_secs = 900
+subject_prefix = "[Agent]"
